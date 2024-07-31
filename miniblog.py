@@ -5,4 +5,4 @@ from app.models import User, Post
 
 @app.shell_context_processor
 def createShellContext():
-    return{'sa':sa, 'so':so, 'db':db, 'User':User, 'Post':Post} 
+    return{'sa':sa, 'so':so, 'db':db, 'User':User, 'Post':Post}
