@@ -48,3 +48,8 @@ class EditProfileForm(FlaskForm):
 
 class EmptyForm(FlaskForm):
     submit = SubmitField('Submit')
+
+class PostForm(FlaskForm):
+    post = TextAreaField('Tell us something', validators=[
+        DataRequired(), Length(min=1, max=70)])
+    submit = SubmitField('Submit')
