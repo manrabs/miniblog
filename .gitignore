@@ -6,3 +6,6 @@ logs/
 # files
 .flaskenv
 .access.txt
+app/__init__.py
+config.py
+app.db

@@ -3,6 +3,7 @@ from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_mail import Mail
 import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
@@ -14,6 +15,7 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
+mail = Mail(app)
 
 # this ensures that a user not logged in tries to view a protected page gets redirected by Flask-Login automatically to the login form, and only redirect back to the page the user wanted to view after the login process is complete. the 'login' value is the function (or endpoint) name for the login view. i.e. the name you'd use in a url_for() call to get/redirect the URL.
 login.login_view = 'login'
