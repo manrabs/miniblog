@@ -1,5 +1,7 @@
 MiniBlog Project
+
 Overview
+
 MiniBlog is a robust, Flask-based microblogging platform that allows users to share short posts, follow other users, and engage with a community of writers and thinkers. Built with modern web development practices, MiniBlog showcases the power of Python and Flask in creating responsive, user-friendly web applications.
 Features
 
