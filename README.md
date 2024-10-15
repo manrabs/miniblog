@@ -42,6 +42,9 @@ Running the Application
 Future Enhancements
 
 Implement post likes and comments
+
 Add user search functionality
+
 Integrate with external APIs for rich content sharing
+
 Implement real-time notifications
