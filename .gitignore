@@ -9,3 +9,5 @@ logs/
 app/__init__.py
 config.py
 app.db
+messages.pot
+babel.cfg
